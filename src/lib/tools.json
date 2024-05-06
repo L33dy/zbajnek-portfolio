@@ -42,5 +42,9 @@
   {
     "url": "https://github.com/",
     "name": "GitHub"
+  },
+  {
+    "url": "https://pnpm.io/",
+    "name": "pnpm"
   }
 ]

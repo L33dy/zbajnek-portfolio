@@ -3,10 +3,11 @@
     import scrollButter from "scroll-butter";
     import {onMount} from "svelte";
     import {yOffset} from "$lib/store.js";
+    import {isMobile} from "$lib";
 
     onMount(() => {
         scrollButter.init({
-            wrapperDamper: 0.05,
+            wrapperDamper: isMobile() ? 0.085 : 0.05,
             wrapperId: 'scroll-content'
         })
 

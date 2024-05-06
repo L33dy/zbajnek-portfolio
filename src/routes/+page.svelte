@@ -1,7 +1,7 @@
 <script>
     import Welcome from "./components/Welcome.svelte";
     import About from "./components/About.svelte";
-    import Selection from "./components/Selection.svelte";
+    import Tools from "./components/Tools.svelte";
     import Footer from "./components/Footer.svelte";
 </script>
 
@@ -9,6 +9,6 @@
 
 <About />
 
-<Selection />
+<Tools />
 
 <Footer />
