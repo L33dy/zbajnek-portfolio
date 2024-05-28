@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Svelte",
+    "level": 5
+  },
+  {
+    "name": "Unity",
+    "level": 5
+  },
+  {
+    "name": "Tailwind",
+    "level": 4
+  },
+  {
+    "name": "Javascript",
+    "level": 4
+  },
+  {
+    "name": "C#",
+    "level": 4
+  },
+  {
+    "name": "Netlify",
+    "level": 3
+  },
+  {
+    "name": "Typescript",
+    "level": 2
+  }
+]

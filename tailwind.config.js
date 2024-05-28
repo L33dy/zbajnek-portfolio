@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sofia': 'Sofia, sans-serif'
+        'urbanist': 'Urbanist sans-serif'
+      },
+      fontSize: {
+        '10xl': '10rem'
       }
     },
   },
