@@ -2,7 +2,8 @@
     export let data;
 </script>
 
-<nav class="absolute top-0 z-50 w-full flex justify-between items-center font-bold text-5xl px-32 py-16">
+<nav {...(data.pathname === "/" ? {'data-aos': 'fade', 'data-aos-duration': '1500', 'data-aos-delay': '1700'} : {})}
+     class="absolute top-0 z-50 w-full flex justify-between items-center font-bold text-2xl lg:text-3xl 2xl:text-4xl px-6 2xl:px-24 py-8 2xl:py-12">
     <button class={data.pathname === "/" ? "text-white" : "text-green-600"}>
         <a href="/">z</a>
     </button>

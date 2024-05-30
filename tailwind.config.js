@@ -8,6 +8,9 @@ export default {
       },
       fontSize: {
         '10xl': '10rem'
+      },
+      screens: {
+        '3xl': '2000px'
       }
     },
   },
