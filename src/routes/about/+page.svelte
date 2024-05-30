@@ -1,8 +1,23 @@
 <script>
     import education from '$lib/education.json'
-    import skills from '$lib/skills.json'
     import Tile from "./components/Tile.svelte";
-    import Stars from "./components/Stars.svelte";
+    import TagCloud  from 'TagCloud';
+    import {onMount} from "svelte";
+
+    onMount(() => {
+        const container = ".cloud-container"
+        const texts = [
+            "Svelte", "Javascript", "Tailwind CSS", "C#", "Netlify", "Unity", "Typescript"
+        ]
+        const options = {
+            radius: 300,
+            maxSpeed: 'slow',
+            keep: false
+        }
+
+        let tc = TagCloud(container, texts, options)
+    })
+
 </script>
 
 <svelte:head>
@@ -48,14 +63,7 @@
 <section class="w-full px-48">
     <div class="flex flex-col gap-20">
         <h2 class="text-green-600 text-10xl font-bold">skills</h2>
-        <div class="flex flex-col gap-8 pl-32">
-            {#each skills as s}
-                <div class="flex justify-between items-center w-[600px]">
-                    <h3 class="text-5xl text-gray-600 font-bold uppercase">{s.name}</h3>
-                    <Stars level={s.level} />
-                </div>
-            {/each}
-        </div>
+        <div class="cloud-container"></div>
     </div>
 </section>
 
@@ -74,5 +82,9 @@
 
     .section > div > h2 {
         @apply text-green-600 text-10xl font-bold w-[700px];
+    }
+
+    .cloud-container {
+        @apply w-full flex justify-center items-center text-5xl font-medium text-gray-600;
     }
 </style>

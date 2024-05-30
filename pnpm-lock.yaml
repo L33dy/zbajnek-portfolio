@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      TagCloud:
+        specifier: ^2.5.0
+        version: 2.5.0
       aos:
         specifier: ^2.3.4
         version: 2.3.4
@@ -343,6 +346,9 @@ packages:
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+
+  TagCloud@2.5.0:
+    resolution: {integrity: sha512-lMr8UCbOLOyP9iKc/lJalpNTm25rjmplbQ20ljw02tyx4ITBxDh4TRBhSpayC6QGjtRtvslUljfr2SGoPOGnXw==}
 
   acorn@8.11.3:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
@@ -1154,6 +1160,8 @@ snapshots:
   '@types/cookie@0.6.0': {}
 
   '@types/estree@1.0.5': {}
+
+  TagCloud@2.5.0: {}
 
   acorn@8.11.3: {}
 
