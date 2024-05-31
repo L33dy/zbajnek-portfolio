@@ -44,7 +44,7 @@
          src="../../icons/down-arrow.svg">
 </section>
 
-<section class="w-full px-24 min-h-[80vh] 2xl:pt-32">
+<section class="w-full px-8 md:px-24 min-h-[80vh] 2xl:mt-32">
     <div class="flex flex-col lg:flex-row gap-10 lg:gap-24 3xl:gap-80">
         <h2 class="text-green-600 text-5xl md:text-6xl lg:text-7xl 2xl:hidden font-bold">education</h2>
         <h2 class="text-green-600 hidden 2xl:block text-9xl 3xl:text-10xl font-bold">edu-<br>&nbsp;cation</h2>
@@ -56,8 +56,8 @@
     </div>
 </section>
 
-<section class="w-full px-24">
-    <div class="flex flex-col gap-20">
+<section class="w-full px-8 md:px-24">
+    <div class="flex flex-col gap-14">
         <h2 class="text-green-600 text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl 3xl:text-10xl font-bold">skills</h2>
         <div class="cloud-container"></div>
     </div>
@@ -69,6 +69,6 @@
 
 <style lang="postcss">
     .cloud-container {
-        @apply tracking-wide w-full flex justify-center items-center text-xl md:text-2xl lg:text-3xl font-bold text-gray-500 uppercase whitespace-nowrap;
+        @apply tracking-wide w-full flex justify-center items-center text-xl md:text-2xl lg:text-3xl font-bold text-gray-500 uppercase whitespace-nowrap cursor-default;
     }
 </style>
