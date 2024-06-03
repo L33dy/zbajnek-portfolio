@@ -1,8 +1,9 @@
 [
   {
-    "employer": "Ministry of Finance",
-    "position": "System Administrator",
-    "duration": "2024",
-    "description": "Maintaining the infrastructure and network services. Monitoring and evaluating the network for potential threats."
+    "employer": "Logiscool",
+    "position": "Unity and C# lecturer",
+    "duration": "January 2023 - present",
+    "type": "Part-time",
+    "description": "Teaching young children programming in C# and as well the workflow in Unity game engine."
   }
 ]

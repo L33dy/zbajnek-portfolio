@@ -1,8 +1,10 @@
 <script>
     import education from '$lib/education.json'
-    import Tile from "./components/Tile.svelte";
+    import experience from '$lib/experience.json'
+    import EducationTile from "./components/EducationTile.svelte";
     import TagCloud from 'TagCloud';
     import {onMount} from "svelte";
+    import ExperienceTile from "./components/ExperienceTile.svelte";
 
     onMount(() => {
         let isMobile = ( window.innerWidth <= 800 )
@@ -46,11 +48,23 @@
 
 <section class="w-full px-8 md:px-24 min-h-[80vh] 2xl:mt-32">
     <div class="flex flex-col lg:flex-row gap-10 lg:gap-24 3xl:gap-80">
+        <h2 class="text-green-600 text-5xl md:text-6xl lg:text-7xl 2xl:hidden font-bold">experience</h2>
+        <h2 class="text-green-600 hidden 2xl:block text-9xl 3xl:text-10xl font-bold">ex-<br>&nbsp;perience</h2>
+        <div class="flex flex-col">
+            {#each experience as e}
+                <ExperienceTile employer={e.employer} position={e.position} duration={e.duration} type={e.type} description={e.description} />
+            {/each}
+        </div>
+    </div>
+</section>
+
+<section class="w-full px-8 md:px-24 min-h-[80vh] 2xl:mt-32">
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-24 3xl:gap-80">
         <h2 class="text-green-600 text-5xl md:text-6xl lg:text-7xl 2xl:hidden font-bold">education</h2>
         <h2 class="text-green-600 hidden 2xl:block text-9xl 3xl:text-10xl font-bold">edu-<br>&nbsp;cation</h2>
         <div class="flex flex-col">
             {#each education as e}
-                <Tile title={e.title} place={e.school} duration={e.duration} description={e.description}/>
+                <EducationTile title={e.title} place={e.school} duration={e.duration} description={e.description}/>
             {/each}
         </div>
     </div>
