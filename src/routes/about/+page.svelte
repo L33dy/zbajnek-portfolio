@@ -26,9 +26,9 @@
     <title>about | zbyněk židlický</title>
 </svelte:head>
 
-<section class="w-full min-h-[80vh] 2xl:min-h-[100vh] px-8 md:px-24 2xl:px-40 pt-36 2xl:pt-64 relative">
+<section class="w-full min-h-[100vh] px-8 md:px-24 2xl:px-40 pt-36 2xl:pt-64 relative">
     <div class="flex flex-col justify-start items-start gap-6 2xl:gap-14 w-full">
-        <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl 3xl:text-10xl text-green-600">zbyněk židlický</h1>
+        <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl 3xl:text-10xl text-green-600 whitespace-nowrap">zbyněk židlický</h1>
         <p class="font-medium text-justify 2xl:text-left text-xl 2xl:text-2xl 3xl:text-3xl 2xl:w-1/2 3xl:w-3/4 text-gray-500">Hey! I'm a young developer
             based in Prague with experience in making fast,
             eye-catching and modern websites or web applications. I'm also into making small horror video games in
@@ -38,7 +38,7 @@
             <a class="text-green-600 font-bold text-xl 2xl:text-2xl 3xl:text-3xl" href="mailto:zbynekzidlicky@icloud.com">zbynekzidlicky@icloud.com</a>
         </div>
     </div>
-    <img alt="down arrow" class="w-8 2xl:w-12 left-[15%] -translate-x-1/2 -translate-y-1/2 bottom-[10%] 2xl:bottom-10 absolute" data-aos="fade-down" data-aos-delay="1500"
+    <img alt="down arrow" class="w-8 2xl:w-12 left-[15%] -translate-x-1/2 -translate-y-1/2 bottom-[15%] 2xl:bottom-10 absolute" data-aos="fade-down" data-aos-delay="1500"
          data-aos-duration="800" data-aos-easing="ease-in-out-quart"
          data-aos-once="true" data-aos-offset="0"
          src="../../icons/down-arrow.svg">
