@@ -13,7 +13,7 @@
             <h4 class="md:text-xl 2xl:text-3xl text-gray-600 font-bold">{place}</h4>
         </div>
         {#if description}
-            <p class="normal-case text-base lg:text-lg 2xl:text-2xl font-medium text-gray-500">{description}</p>
+            <p class="normal-case text-sm lg:text-base 2xl:text-xl font-wix-madefor font-medium text-gray-500">{description}</p>
         {/if}
     </div>
 </div>

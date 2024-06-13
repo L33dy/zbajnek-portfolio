@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'urbanist': 'Urbanist sans-serif'
+        'wix-madefor': 'Wix Madefor Text'
       },
       fontSize: {
         '10xl': '10rem'

@@ -1,9 +1,9 @@
 [
   {
     "employer": "Logiscool",
-    "position": "Unity and C# lecturer",
-    "duration": "January 2023 - present",
-    "type": "Part-time",
-    "description": "Teaching young children programming in C# and as well the workflow in Unity game engine."
+    "position": "Unity Lecturer",
+    "duration": "Jan 2023 - present",
+    "description": "Making small game projects with young students in Unity. Teaching them the workflow in Unity game engine and C# basics. We were focused mainly on 3D and 2D games made with Standard Render Pipeline.",
+    "skills": ["Unity", "C#"]
   }
 ]
