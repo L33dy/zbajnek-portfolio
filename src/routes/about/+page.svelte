@@ -50,7 +50,7 @@
     <div class="flex flex-col lg:flex-row gap-10 lg:gap-24 3xl:gap-[25rem]">
         <h2 class="text-green-600 text-5xl md:text-6xl lg:text-7xl 2xl:hidden font-bold">experience</h2>
         <h2 class="text-green-600 hidden 2xl:block text-9xl 3xl:text-10xl w-[640px] font-bold">ex-<br>&nbsp;perience</h2>
-        <div class="flex flex-col">
+        <div class="flex flex-col gap-10">
             {#each experience as e}
                 <ExperienceTile employer={e.employer} position={e.position} duration={e.duration} description={e.description} skills={e.skills} />
             {/each}
