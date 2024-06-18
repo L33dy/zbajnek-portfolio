@@ -46,7 +46,7 @@
          src="../../icons/down-arrow.svg">
 </section>
 
-<section class="w-full px-8 md:px-24 min-h-[80vh] 2xl:mt-32">
+<section class="w-full px-8 md:px-24 min-h-[60vh] 2xl:mt-32">
     <div class="flex flex-col lg:flex-row gap-10 lg:gap-24 3xl:gap-[25rem]">
         <h2 class="text-green-600 text-5xl md:text-6xl lg:text-7xl 2xl:hidden font-bold">experience</h2>
         <h2 class="text-green-600 hidden 2xl:block text-9xl 3xl:text-10xl w-[640px] font-bold">ex-<br>&nbsp;perience</h2>
@@ -58,7 +58,7 @@
     </div>
 </section>
 
-<section class="w-full px-8 md:px-24 min-h-[80vh] 2xl:mt-32">
+<section class="w-full px-8 md:px-24 min-h-[60vh] 2xl:mt-32">
     <div class="flex flex-col lg:flex-row gap-10 lg:gap-24 3xl:gap-[25rem]">
         <h2 class="text-green-600 text-5xl md:text-6xl lg:text-7xl 2xl:hidden font-bold">education</h2>
         <h2 class="text-green-600 hidden 2xl:block text-9xl 3xl:text-10xl font-bold w-[640px]">edu-<br>&nbsp;cation</h2>
@@ -82,6 +82,10 @@
 </footer>
 
 <style lang="postcss">
+    :global(body) {
+        @apply bg-gray-200;
+    }
+
     .cloud-container {
         @apply tracking-wide w-full flex justify-center items-center text-xl md:text-2xl lg:text-3xl font-bold text-gray-500 uppercase whitespace-nowrap cursor-default;
     }
