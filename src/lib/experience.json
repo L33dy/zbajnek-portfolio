@@ -1,9 +1,18 @@
 [
   {
-    "employer": "Logiscool",
+    "id": 0,
+    "employer": "Logiscool CZ",
     "position": "Unity Lecturer",
-    "duration": "Jan 2023 - present",
-    "description": "Making small game projects with young students in Unity. Teaching them the workflow in Unity game engine and C# basics. We were focused mainly on 3D and 2D games made in Standard Render Pipeline.",
+    "duration": "Jan 2023 - Jun 2024",
+    "description": "Teaching young children the workflow in Unity game engine and C# basics. We were focused mainly on 3D and 2D games made with the Standard Render Pipeline.",
     "skills": ["Unity", "C#"]
+  },
+  {
+    "id": 1,
+    "employer": "HAXAGON s.r.o.",
+    "position": "Frontend developer",
+    "duration": "Jun 2024 - Present",
+    "description": "Development and maintenance of an e-learning platform for cyber security.",
+    "skills": ["Vue.js", "Typescript", "Tailwind CSS"]
   }
 ]

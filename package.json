@@ -19,8 +19,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"TagCloud": "^2.5.0",
-		"aos": "^2.3.4",
-		"scroll-butter": "^1.0.6"
+		"aos": "^2.3.4"
 	}
 }

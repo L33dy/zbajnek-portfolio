@@ -1,21 +1,18 @@
 <script>
-    export let employer;
-    export let position;
-    export let duration;
-    export let description;
-    export let skills;
+    export let expData;
 </script>
 
-<div class="md:w-[570px] flex flex-col gap-3">
-    <div class="flex flex-col md:gap-1">
-        <h3 class="text-xl md:text-2xl 2xl:text-4xl font-bold text-green-600">{position}<span class="px-2.5">·</span>{employer}</h3>
-        <h4 class="text-sm md:text-lg 2xl:text-xl text-gray-600 font-medium uppercase font-wix-madefor">{duration}</h4>
+<div data-aos="fade-left" data-aos-once="true" data-aos-offset="350" class="w-full flex flex-col gap-3 font-wix-madefor">
+    <div class="flex flex-col 2xl:gap-0.5">
+        <h3 class="text-xl md:text-2xl 2xl:text-3xl font-bold text-green-600">{expData.position}<span
+                class="px-1 md:px-2.5">·</span>{expData.employer}</h3>
+        <h4 class="text-sm md:text-base 2xl:text-xl text-gray-600 font-semibold">{expData.duration}</h4>
     </div>
-    <p class="2xl:text-xl font-wix-madefor font-medium text-gray-500 text-justify 2xl:text-left">{description}</p>
+    <p class="text-sm md:text-base xl:text-lg 3xl:text-xl font-medium text-gray-500 text-justify 2xl:text-left">{expData.description}</p>
     <div class="w-full flex gap-2 mt-2">
-        {#each skills as skill}
-            <div class="bg-green-100 px-4 py-0.5 rounded-full">
-                <p class="font-wix-madefor font-semibold text-green-700">{skill}</p>
+        {#each expData.skills as skill}
+            <div class="bg-blue-100 px-4 py-0.5 rounded-full">
+                <p class="font-semibold text-blue-700 text-sm lg:text-base">{skill}</p>
             </div>
         {/each}
     </div>

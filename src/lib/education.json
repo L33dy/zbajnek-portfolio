@@ -1,8 +1,17 @@
 [
   {
-    "title": "High school education",
+    "title": "Bachelor's degree in Applied Informatics",
+    "school": "University of Economics and Business",
+    "duration": "2024 - ACT",
+    "description": "Program for studying informatics, which is especially useful in business. Acquiring IT skills, as well as knowledge in the field of management, business and economics.",
+    "about": ["Database management", "Web applications and technologies", "Project and team management", "Programming in Java"],
+    "present": true
+  },
+  {
+    "title": "High school education in Cybersecurity",
     "school": "Smíchovská střední průmyslová škola",
     "duration": "2020 - 2024",
-    "description": "Complete and complex technical education in fields such as cybersecurity and IT. Finished by taking the matura exam."
+    "description": "Complete and complex technical education in fields such as cybersecurity and IT. Finished by taking the matura exam.",
+    "present": false
   }
 ]

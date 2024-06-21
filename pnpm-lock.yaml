@@ -8,15 +8,9 @@ importers:
 
   .:
     dependencies:
-      TagCloud:
-        specifier: ^2.5.0
-        version: 2.5.0
       aos:
         specifier: ^2.3.4
         version: 2.3.4
-      scroll-butter:
-        specifier: ^1.0.6
-        version: 1.0.6
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
@@ -346,9 +340,6 @@ packages:
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
-
-  TagCloud@2.5.0:
-    resolution: {integrity: sha512-lMr8UCbOLOyP9iKc/lJalpNTm25rjmplbQ20ljw02tyx4ITBxDh4TRBhSpayC6QGjtRtvslUljfr2SGoPOGnXw==}
 
   acorn@8.11.3:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
@@ -791,10 +782,6 @@ packages:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
 
-  scroll-butter@1.0.6:
-    resolution: {integrity: sha512-x50gTip7dgsD5Dq7Pt3YVQIMC8J+VporrGgy9Tzsh8zicvFR90WQy7ivV5pA2wOcuLz2kYQwq/rbpLS9E5Ktiw==}
-    engines: {node: '>=14.0.0'}
-
   set-cookie-parser@2.6.0:
     resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
 
@@ -1160,8 +1147,6 @@ snapshots:
   '@types/cookie@0.6.0': {}
 
   '@types/estree@1.0.5': {}
-
-  TagCloud@2.5.0: {}
 
   acorn@8.11.3: {}
 
@@ -1584,8 +1569,6 @@ snapshots:
   sade@1.8.1:
     dependencies:
       mri: 1.2.0
-
-  scroll-butter@1.0.6: {}
 
   set-cookie-parser@2.6.0: {}
 
