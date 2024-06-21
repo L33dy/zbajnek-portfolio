@@ -1,0 +1,9 @@
+,
+  {
+    "id": 1,
+    "employer": "HAXAGON s.r.o.",
+    "position": "Frontend developer",
+    "duration": "Jun 2024 - Present",
+    "description": "Development and maintenance of an e-learning platform for cyber security.",
+    "skills": ["Vue.js", "Typescript", "Tailwind CSS"]
+  }
