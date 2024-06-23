@@ -5,7 +5,7 @@
 <section class="w-full h-[100vh] flex justify-center items-center bg-green-600 text-white pb-72">
     <div class="flex flex-col justify-center items-center gap-4 2xl:gap-5">
         <h1 data-aos="fade" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true" class="font-bold text-5xl 2xl:text-9xl">zbyněk židlický</h1>
-        <h2 id="subtext" class="font-bold text-2xl 2xl:text-6xl text-center">developing with enthusiasm and passion</h2>
+        <h2 id="subtext" class="font-bold text-2xl 2xl:text-6xl text-center">turning ideas into interactive experiences</h2>
     </div>
 </section>
 

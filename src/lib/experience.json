@@ -4,7 +4,7 @@
     "employer": "Logiscool CZ",
     "position": "Unity Lecturer",
     "duration": "Jan 2023 - Jun 2024",
-    "description": "Teaching young children the workflow in Unity game engine and C# basics. We were focused mainly on 3D and 2D games made with the Standard Render Pipeline.",
+    "description": "Teaching young children the workflow in Unity game engine and C# basics. Focusing mainly on 3D and 2D games made for PC, we made over 50+ unique projects learning terrain sculpting, object pooling, working with scriptable objects and so much more.",
     "skills": ["Unity", "C#"]
   }
 ]
