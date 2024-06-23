@@ -27,11 +27,13 @@
         <p class="font-wix-madefor font-medium text-justify 2xl:text-left text-lg 2xl:text-2xl 2xl:w-3/5 text-gray-500">
             Hey! I'm a young developer
             based in Prague with experience in making fast,
-            eye-catching and modern websites or web applications. Currently pursuing my dream to become a skilled fullstack developer. <br><br>I'm open to work on any project you have in
+            eye-catching and modern websites or web applications. Currently pursuing my dream to become a skilled
+            fullstack developer. <br><br>I'm open to work on any project you have in
             mind. Let's connect! 🤙</p>
         <div>
-            <a on:mouseenter={() => mouseEnter(cursor)} on:mouseleave={() => mouseLeave(cursor)} class="text-green-600 font-wix-madefor font-bold text-lg 2xl:text-2xl"
-               href="mailto:zbynekzidlicky@icloud.com">zbynekzidlicky@icloud.com</a>
+            <a class="text-green-600 font-wix-madefor font-bold text-lg 2xl:text-2xl" href="mailto:zbynekzidlicky@icloud.com"
+               on:mouseenter={() => mouseEnter(cursor)}
+               on:mouseleave={() => mouseLeave(cursor)}>zbynekzidlicky@icloud.com</a>
         </div>
     </div>
     <img alt="down arrow"
@@ -66,8 +68,10 @@
     </div>
 </section>-->
 
-<footer class="flex justify-center items-center pt-36 pb-12 3xl:pb-20">
-    <a data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" on:mouseenter={() => mouseEnter(cursor)} on:mouseleave={() => mouseLeave(cursor)} class="text-xl 2xl:text-4xl 3xl:text-5xl text-green-600 font-bold" href="mailto:zbynekzidlicky@icloud.com">zbynekzidlicky@icloud.com</a>
+<footer class="pt-36 pb-12 3xl:pb-20 w-full flex flex-col items-center overflow-hidden">
+    <a class="text-xl 2xl:text-4xl 3xl:text-5xl text-green-600 font-bold" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="0" data-aos-once="true"
+       href="mailto:zbynekzidlicky@icloud.com" on:mouseenter={() => mouseEnter(cursor)}
+       on:mouseleave={() => mouseLeave(cursor)}>zbynekzidlicky@icloud.com</a>
 </footer>
 
 <style lang="postcss">

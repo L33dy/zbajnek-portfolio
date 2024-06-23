@@ -4,14 +4,32 @@
 
 <section class="w-full h-[100vh] flex justify-center items-center bg-green-600 text-white pb-72">
     <div class="flex flex-col justify-center items-center gap-4 2xl:gap-5">
-        <h1 data-aos="fade" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true" class="font-bold text-5xl 2xl:text-9xl">zbyněk židlický</h1>
-        <h2 id="subtext" class="font-bold text-2xl 2xl:text-6xl text-center">turning ideas into interactive experiences</h2>
+        <h1 class="font-bold text-5xl 2xl:text-9xl" id="title">zbyněk židlický</h1>
+        <h2 class="font-bold text-2xl 2xl:text-6xl text-center" id="subtitle">turning ideas into interactive
+            experiences</h2>
     </div>
 </section>
 
 <style>
-    #subtext {
-        animation-name: reveal;
+    #title {
+        opacity: 0;
+        animation-name: reveal-title;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes reveal-title {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #subtitle {
+        animation-name: reveal-subtitle;
         animation-duration: 1.75s;
         animation-delay: 2s;
         animation-timing-function: ease-in;
@@ -19,7 +37,7 @@
         opacity: 0;
     }
 
-    @keyframes reveal {
+    @keyframes reveal-subtitle {
         0% {
             clip-path: circle(0%);
             opacity: 0;

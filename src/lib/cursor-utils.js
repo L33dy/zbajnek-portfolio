@@ -2,8 +2,26 @@ export function mouseEnter(cursor) {
     cursor.classList.add('cursor--over-element')
 }
 
-export function mouseLeave(cursor) {
+export function mouseLeave(cursor, e = null) {
     cursor.classList.remove('cursor--over-element')
+
+    e?.currentTarget.style.removeProperty('transform')
+}
+
+let movementSensitivity = 0.2;
+
+export function animateMovement(e) {
+    let rect = e.target.getBoundingClientRect();
+
+    let mouseX = e.clientX - rect.left;
+    let mouseY = e.clientY - rect.top;
+    let centerX = rect.width / 2;
+    let centerY = rect.height / 2;
+
+    let relX = (mouseX - centerX) * movementSensitivity;
+    let relY = (mouseY - centerY) * movementSensitivity;
+
+    e.currentTarget.style.transform = `translate3d(${relX}px, ${relY}px, 0px)`
 }
 
 export function isMobileUserAgent() {

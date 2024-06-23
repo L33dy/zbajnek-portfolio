@@ -6,6 +6,7 @@
     import AOS from "aos"
     import {onMount} from "svelte";
     import {isMobileUserAgent} from "$lib/cursor-utils.js";
+    import {mouse} from "$lib/store.js";
 
     export let data;
 
@@ -18,8 +19,15 @@
     })
 
     function moveCursor(e) {
-        const mouseY = e.clientY - 8;
-        const mouseX = e.clientX - 8;
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        mouse.update(m => {
+            m.x = mouseX
+            m.y = mouseY
+
+            return m;
+        })
 
         cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     }
