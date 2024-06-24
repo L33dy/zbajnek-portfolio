@@ -8,9 +8,7 @@ export function mouseLeave(cursor, e = null) {
     e?.currentTarget.style.removeProperty('transform')
 }
 
-let movementSensitivity = 0.2;
-
-export function animateMovement(e) {
+export function animateMovement(e, sensitivity = 0.2) {
     let rect = e.target.getBoundingClientRect();
 
     let mouseX = e.clientX - rect.left;
@@ -18,8 +16,8 @@ export function animateMovement(e) {
     let centerX = rect.width / 2;
     let centerY = rect.height / 2;
 
-    let relX = (mouseX - centerX) * movementSensitivity;
-    let relY = (mouseY - centerY) * movementSensitivity;
+    let relX = (mouseX - centerX) * sensitivity;
+    let relY = (mouseY - centerY) * sensitivity;
 
     e.currentTarget.style.transform = `translate3d(${relX}px, ${relY}px, 0px)`
 }

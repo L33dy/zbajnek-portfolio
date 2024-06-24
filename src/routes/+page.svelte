@@ -1,25 +1,31 @@
+<script>
+    import Button from "./components/Button.svelte";
+</script>
+
 <svelte:head>
     <title>z | zbyněk židlický</title>
 </svelte:head>
 
-<section class="w-full h-[100vh] flex justify-center items-center bg-green-600 text-white pb-72">
+<section class="w-full h-[100vh] flex flex-col justify-center items-center gap-32 bg-green-600 text-white pb-72">
     <div class="flex flex-col justify-center items-center gap-4 2xl:gap-5">
         <h1 class="font-bold text-5xl 2xl:text-9xl" id="title">zbyněk židlický</h1>
         <h2 class="font-bold text-2xl 2xl:text-6xl text-center" id="subtitle">turning ideas into interactive
             experiences</h2>
     </div>
+    <!--<Button text="Projects" link="/projects" />-->
 </section>
 
-<style>
+<style lang="postcss">
+
     #title {
         opacity: 0;
-        animation-name: reveal-title;
+        animation-name: opacity-reveal;
         animation-duration: 1.5s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
     }
 
-    @keyframes reveal-title {
+    @keyframes opacity-reveal {
         0% {
             opacity: 0;
         }
@@ -31,7 +37,7 @@
     #subtitle {
         animation-name: reveal-subtitle;
         animation-duration: 1.75s;
-        animation-delay: 2s;
+        animation-delay: 1.6s;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
         opacity: 0;

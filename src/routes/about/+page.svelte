@@ -5,14 +5,19 @@
     import EducationTile from "./components/EducationTile.svelte";
     import {mouseEnter, mouseLeave} from "$lib/cursor-utils.js";
     import {onMount} from "svelte";
+    import {getRandomRange} from '$lib/math-utils.js'
 
     let sortedExperience = experience.sort((a, b) => b.id - a.id)
-
     let cursor;
+    let star;
 
     onMount(() => {
         cursor = document.querySelector('.cursor')
     })
+
+    function scrollStar() {
+        star.style.transform = `rotate(${window.scrollY/5}deg)`
+    }
 
 </script>
 
@@ -20,28 +25,25 @@
     <title>about | zbyněk židlický</title>
 </svelte:head>
 
+<svelte:window on:scroll={scrollStar} />
+
 <section class="w-full min-h-[100vh] px-8 md:px-24 2xl:px-40 pt-36 2xl:pt-64 relative">
     <div class="flex flex-col justify-start items-start gap-6 2xl:gap-14 w-full">
         <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl 3xl:text-10xl text-green-600 whitespace-nowrap">
             zbyněk židlický</h1>
-        <p class="font-wix-madefor font-medium text-justify 2xl:text-left text-lg 2xl:text-2xl 2xl:w-3/5 text-gray-500">
-            Hey! I'm a young developer
-            based in Prague with experience in making fast,
-            eye-catching and modern websites or web applications. Currently pursuing my dream to become a skilled
-            fullstack developer. <br><br>I'm open to work on any project you have in
-            mind. Let's connect! 🤙</p>
+        <p class="font-wix-madefor font-medium text-justify 2xl:text-left text-lg 2xl:text-2xl 3xl:w-3/5 text-gray-500">
+            Hey everyone. <br><br>
+            My name is Zbyněk Židlický, I'm energetic and passionate frontend developer. With over 2 years of experience, I'm designing and developing websites and web applications to amaze and astonish every visitor. <br><br>
+            I'm notably experienced with SvelteKit, Javascript and Tailwind CSS but it's always fun for me to learn something new. <br><br>
+            I'm open to work on any project you have in mind. Let's connect! 🤙
+        </p>
         <div>
             <a class="text-green-600 font-wix-madefor font-bold text-lg 2xl:text-2xl" href="mailto:zbynekzidlicky@icloud.com"
                on:mouseenter={() => mouseEnter(cursor)}
                on:mouseleave={() => mouseLeave(cursor)}>zbynekzidlicky@icloud.com</a>
         </div>
     </div>
-    <img alt="down arrow"
-         class="w-8 2xl:w-12 left-[15%] -translate-x-1/2 -translate-y-1/2 bottom-[20%] 2xl:bottom-10 absolute"
-         data-aos="fade-down" data-aos-delay="1500"
-         data-aos-duration="800" data-aos-easing="ease-in-out-quart"
-         data-aos-offset="0" data-aos-once="true"
-         src="../../icons/down-arrow.svg">
+    <img bind:this={star} src="../../icons/star-four.svg" alt="star" class="w-7 lg:w-10 absolute bottom-10 left-1/2">
 </section>
 
 <section class="list">
