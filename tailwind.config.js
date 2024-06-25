@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'wix-madefor': 'Wix Madefor Text'
+        'wix-madefor': 'Wix Madefor Text',
+        'degular': 'Degular'
       },
       fontSize: {
         '10xl': '10rem'

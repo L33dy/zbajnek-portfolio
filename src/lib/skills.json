@@ -1,0 +1,32 @@
+{
+  "softwares": [
+    "Svelte",
+    "SvelteKit",
+    "Javascript",
+    "Typescript",
+    "Tailwind CSS",
+    "WebStorm",
+    "Figma",
+    "Unity",
+    "C#",
+    ".NET",
+    "Rider",
+    "Blender"
+  ],
+  "soft": [
+    "Time Management",
+    "Passion",
+    "Problem Solving",
+    "Communication",
+    "Availability",
+    "Team Working"
+  ],
+  "hard": [
+    "Coding",
+    "Research",
+    "Clean Code",
+    "Database Management",
+    "Software Testing",
+    "Security Principles"
+  ]
+}

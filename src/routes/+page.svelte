@@ -6,10 +6,10 @@
     <title>z | zbyněk židlický</title>
 </svelte:head>
 
-<section class="w-full h-[100vh] flex flex-col justify-center items-center gap-32 bg-green-600 text-white pb-72">
-    <div class="flex flex-col justify-center items-center gap-4 2xl:gap-5">
-        <h1 class="font-bold text-5xl 2xl:text-9xl" id="title">zbyněk židlický</h1>
-        <h2 class="font-bold text-2xl 2xl:text-6xl text-center" id="subtitle">turning ideas into interactive
+<section class="w-full h-[100vh] flex flex-col justify-center items-center gap-32 bg-green-600 text-white pb-40">
+    <div class="flex flex-col justify-center items-center gap-4 2xl:gap-5 text-center">
+        <h1 class="font-bold text-5xl md:text-7xl 2xl:text-8xl 3xl:text-9xl" id="title">zbyněk židlický</h1>
+        <h2 class="font-bold text-2xl md:text-4xl 2xl:text-5xl 3xl:text-6xl" id="subtitle">turning ideas into interactive
             experiences</h2>
     </div>
     <!--<Button text="Projects" link="/projects" />-->
