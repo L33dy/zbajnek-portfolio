@@ -4,7 +4,15 @@
     "employer": "Logiscool CZ",
     "position": "Unity Lecturer",
     "duration": "Jan 2023 - Jun 2024",
-    "description": "Teaching teenaged children the workflow in Unity game engine and C# basics. Focusing mainly on 3D and 2D games made for PC, we've made over 50+ unique projects where we learnt things such as: terrain sculpting, object pooling, scriptable objects and so much more.",
+    "description": "Teaching young children the workflow in Unity game engine and C# basics. Focusing mainly on 3D and 2D games made for PC, we've made over 50+ unique projects where we learnt things such as: terrain sculpting, object pooling, scriptable objects and so much more.",
     "skills": ["Unity", "C#"]
+  },
+  {
+    "id": 1,
+    "employer": "HAXAGON s.r.o.",
+    "position": "Frontend developer",
+    "duration": "Jun 2024 - Present",
+    "description": "Development and maintenance of an e-learning platform for cyber security.",
+    "skills": ["Vue.js", "Svelte", "Typescript", "Tailwind CSS"]
   }
 ]

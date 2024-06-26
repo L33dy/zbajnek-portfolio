@@ -4,6 +4,10 @@
 
     export let text;
     export let link;
+    export let primaryBgColor;
+    export let primaryTextColor;
+    export let secondaryBgColor;
+    export let secondaryTextColor;
 
     let cursor;
 
@@ -12,17 +16,17 @@
     })
 </script>
 
-<a class="parent-btn bg-white px-10 py-2.5 border-[1px] border-white uppercase font-bold text-3xl rounded-full relative overflow-hidden" href={link} on:mouseenter={() => {mouseEnter(cursor)}}
+<a style="background-color: {primaryBgColor}; border-color: {primaryBgColor}" class="parent-btn px-16 py-5 border-[1px] uppercase font-medium text-2xl rounded-full relative overflow-hidden font-degular" href={link} on:mouseenter={() => {mouseEnter(cursor)}}
    on:mouseleave={(e) => {mouseLeave(cursor, e)}}
    on:mousemove={(e) => animateMovement(e, 0.3)}>
-    <div class="project-btn text-green-700">{text}</div>
-    <div class="project-btn-alt text-white">{text}</div>
-    <div class="card-whipe"></div>
+    <div style="color: {primaryTextColor}" class="project-btn">{text}</div>
+    <div style="color: {secondaryTextColor}" class="project-btn-alt">{text}</div>
+    <div style="background-color: {secondaryBgColor}" class="card-whipe"></div>
 </a>
 
 <style lang="postcss">
     .card-whipe {
-        @apply bg-green-700 w-full h-0 absolute bottom-0 left-0 rounded-full;
+        @apply w-full h-0 absolute bottom-0 left-0 rounded-full;
         transition: height .25s linear;
     }
 
@@ -39,8 +43,8 @@
     }
 
     .parent-btn {
-        opacity: 0;
-        animation: opacity-reveal 1.25s ease-in-out 2.5s forwards, transform-reveal 1.75s ease-in-out 2.5s;
+        opacity: 1;
+        //animation: opacity-reveal 1.25s ease-in-out 2.5s forwards, transform-reveal 1.75s ease-in-out 2.5s;
     }
 
     .project-btn {
