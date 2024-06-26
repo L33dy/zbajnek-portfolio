@@ -13,6 +13,6 @@
     "position": "Frontend developer",
     "duration": "Jun 2024 - Present",
     "description": "Development and maintenance of an e-learning platform for cyber security.",
-    "skills": ["Vue.js", "Svelte", "Typescript", "Tailwind CSS"]
+    "skills": ["Vue.js", "Svelte", "Typescript", "Tailwind CSS", "Docker"]
   }
 ]

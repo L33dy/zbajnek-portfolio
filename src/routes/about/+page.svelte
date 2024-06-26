@@ -60,8 +60,8 @@
     </div>
 </section>
 
-<section class="w-full min-h-[80vh] flex flex-col justify-between items-center">
-    <div class="flex flex-col justify-center items-center gap-10 font-degular w-full">
+<section class="w-full min-h-[100vh] 3xl:min-h-[100vh] flex flex-col justify-between items-center gap-32 xl:gap-0">
+    <div class="flex flex-col justify-center items-center gap-7 xl:gap-10 font-degular w-full">
         <h2 class="text-3xl font-semibold text-green-600">Languages & Softwares</h2>
         <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" class="skills-container">
             {#each skills.softwares as sw}
@@ -71,12 +71,12 @@
             {/each}
         </div>
     </div>
-    <div class="flex flex-col justify-center items-center font-degular gap-10 w-full pb-48">
+    <div class="flex flex-col justify-center items-center font-degular gap-7 xl:gap-10 w-full pb-48">
         <h2 class="text-3xl font-semibold text-green-600">Personal Skills</h2>
-        <div class="flex justify-center items-center gap-24 w-full">
+        <div class="flex flex-col xl:flex-row justify-center items-center gap-14 xl:gap-24 w-full">
             <div class="flex flex-col justify-center items-center gap-5">
-                <h3 class="text-lg font-semibold text-green-600">SOFT</h3>
-                <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" class="skills-container !w-3/4">
+                <h3 class="text-base md:text-lg font-semibold text-green-600">SOFT</h3>
+                <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" class="skills-container !w-full md:!w-3/4">
                     {#each skills.soft as sft}
                         <div class="skill">
                             <p>{sft}</p>
@@ -85,8 +85,8 @@
                 </div>
             </div>
             <div class="flex flex-col justify-center items-center gap-5">
-                <h3 class="text-lg font-semibold text-green-600">HARD</h3>
-                <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" class="skills-container !w-3/4">
+                <h3 class="text-base md:text-lg font-semibold text-green-600">HARD</h3>
+                <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" class="skills-container !w-full md:!w-3/4">
                     {#each skills.hard as hrd}
                         <div class="skill">
                             <p>{hrd}</p>
@@ -108,11 +108,11 @@
 
 <style lang="postcss">
     .skills-container {
-        @apply flex justify-center items-center flex-wrap gap-4 w-2/5;
+        @apply flex justify-center items-center flex-wrap gap-4 w-full md:w-3/4 xl:w-2/5;
     }
 
     .skills-container > .skill {
-        @apply font-medium tracking-wide text-gray-600 border-[1px] border-black/30 rounded-full px-6 py-2;
+        @apply font-medium tracking-wide text-gray-600 text-sm md:text-base border-[1px] border-black/30 rounded-full px-5 md:px-6 py-1.5 md:py-2;
     }
 
     :global(body) {
@@ -120,7 +120,7 @@
     }
 
     .list {
-        @apply w-full px-12 md:px-24 lg:pr-10 xl:pr-16 2xl:pr-24 3xl:px-36 min-h-[60vh] mt-16 2xl:mt-32 overflow-x-hidden;
+        @apply w-full px-12 md:px-24 lg:pr-10 xl:pr-16 2xl:pr-24 3xl:px-36 min-h-[100vh] 3xl:min-h-[60vh] mt-16 2xl:mt-32 overflow-x-hidden;
     }
 
     .list > div {
@@ -132,7 +132,7 @@
     }
 
     .list-title {
-        @apply text-green-600 text-5xl md:text-6xl xl:text-7xl lg:hidden font-bold;
+        @apply text-green-600 text-5xl md:text-6xl xl:text-7xl lg:hidden font-bold whitespace-nowrap;
     }
 
     .list-title-alternate {

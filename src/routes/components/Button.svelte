@@ -16,7 +16,7 @@
     })
 </script>
 
-<a style="background-color: {primaryBgColor}; border-color: {primaryBgColor}" class="parent-btn px-16 py-5 border-[1px] uppercase font-medium text-2xl rounded-full relative overflow-hidden font-degular" href={link} on:mouseenter={() => {mouseEnter(cursor)}}
+<a style="background-color: {primaryBgColor}; border-color: {primaryBgColor}" class="parent-btn px-10 md:px-12 xl:px-14 3xl:px-16 py-2.5 md:py-3 xl:py-4 3xl:py-5 border-[1px] uppercase font-medium text-lg xl:text-2xl rounded-full relative overflow-hidden font-degular" href={link} on:mouseenter={() => {mouseEnter(cursor)}}
    on:mouseleave={(e) => {mouseLeave(cursor, e)}}
    on:mousemove={(e) => animateMovement(e, 0.3)}>
     <div style="color: {primaryTextColor}" class="project-btn">{text}</div>

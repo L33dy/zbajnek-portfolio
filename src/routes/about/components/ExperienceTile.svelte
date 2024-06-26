@@ -9,7 +9,7 @@
         <h4 class="text-sm md:text-base 2xl:text-xl text-gray-600 font-semibold">{expData.duration}</h4>
     </div>
     <p class="text-sm md:text-base xl:text-lg 3xl:text-xl font-medium text-gray-500 text-justify 2xl:text-left">{expData.description}</p>
-    <div class="w-full flex gap-2 mt-2">
+    <div class="w-full flex flex-wrap gap-2 mt-2">
         {#each expData.skills as skill}
             <div class="bg-blue-100 px-4 py-0.5 rounded-full">
                 <p class="font-medium text-blue-700 text-sm lg:text-base">{skill}</p>
